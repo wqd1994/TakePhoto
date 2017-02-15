@@ -21,7 +21,8 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':takephoto_library')
+//    compile project(':takephoto_library')
+    compile 'com.github.wqd1994:TakePhoto:v4.0.5'
 
 
 

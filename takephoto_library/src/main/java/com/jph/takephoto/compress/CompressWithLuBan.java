@@ -57,7 +57,7 @@ public class CompressWithLuBan implements CompressImage {
 
   private void compressOne() {
     Luban.compress(context, files.get(0))
-        .putGear(Luban.CUSTOM_GEAR)
+        .putGear(Luban.THIRD_GEAR)
         .setMaxHeight(options.getMaxHeight())
         .setMaxWidth(options.getMaxWidth())
         .setMaxSize(options.getMaxSize() / 1000)
@@ -81,7 +81,7 @@ public class CompressWithLuBan implements CompressImage {
 
   private void compressMulti() {
     Luban.compress(context, files)
-        .putGear(Luban.CUSTOM_GEAR)
+        .putGear(Luban.THIRD_GEAR)
         .setMaxSize(
             options.getMaxSize() / 1000)                // limit the final image size（unit：Kb）
         .setMaxHeight(options.getMaxHeight())             // limit image height
